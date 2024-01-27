@@ -4,6 +4,10 @@ plugins {
     id 'io.spring.dependency-management' version '1.1.4'
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 group = 'hello'
 version = '0.0.1-SNAPSHOT'
 
